@@ -1,0 +1,15 @@
+[
+  '{{repeat(40)}}',
+  {
+    _id: '{{objectId()}}',
+    index: '{{index()}}',
+    name: '{{firstName()}} {{surname()}}',
+    photo: 'http://placehold.it/32x32',
+    age: '{{integer(20, 40)}}',
+    gender: '{{gender()}}',
+    scores: [
+      '{{repeat(10)}}',
+      '{{integer(1, 5)}}'
+    ]
+  }
+]

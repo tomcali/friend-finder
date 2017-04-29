@@ -65,11 +65,26 @@ A running app at https://friend-finder.herokuapp.com/  provided a head-start on 
 ]
 ```
 Gathered URLs for images of various celebrities from the web and entered those images into the JSON document array, changing information about names and ages in the process. The survey responses, of course, were those from the JSON generator. 
-* We could have set up a mlab-hosted MongoDB database with the information for the 40 potential friends. Or we could have used MySQL. But the assignment did not call for data persistence or an outside database server.
-* 
-* 
-* Executed initial testing under node.js
+* We could have set up a mlab-hosted MongoDB database with the information for the 40 potential friends. Or we could have used MySQL. But the assignment did not call for data persistence or an outside database server. Our approach was to use node.js export/require to bring in the celebrity data.
+* We set up the structure for much of the app, with display of the home screen and survey screen. 
+* Respondent survey data collected did not have a photo or age and gender, so were slightly different from the celebrities. The critical component for matching was the survey responses, so these differences should not matter.
+* Ran into difficulites in passing data from the survey to the server from the modal. Not sure how to fix this. Set up a file called respondents under public, but this may not be the best way to proceed here. 
+* Too bad I didn't get this to work further. Spent a lot of time gathering those celebrity images for the final display of matches.... so be it.
   
 
 ## Application Testing
+Executed partial testing under node.js and on the client/browser. Still much to do to get all the pieces to work together.
 
+Getting 404 error on the submission of the survey:
+POST http://localhost:3000/respondents 404 (Not Found)
+
+I had set up a file named respondents under the public directory... but that does not seem to be what is needed here. 
+
+Not sure how these directory entries fit into the picture:
+```
+[
+	- routing
+        - apiRoutes.js
+        - htmlRoutes.js
+]
+```

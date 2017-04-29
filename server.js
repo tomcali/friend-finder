@@ -14,7 +14,7 @@ app.set('port', process.env.PORT || 3000);
 // Serve static content for the app
 // from the "public" directory in the application directory.
 app.use(express.static(__dirname + "/public"));
-var publicPath = path.resolve(__dirname, 'app/public');
+var publicPath = path.resolve(__dirname, 'public');
 app.use(express.static(publicPath));
 
 // Parse application/x-www-form-urlencoded

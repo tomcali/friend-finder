@@ -12,7 +12,7 @@ Set up the structure of the hosted app and hosted database and began testing.
 The GitHub repository shows the work on the assignment. 
 
 ## Requirements
-The requirements for this assignment may be found in the file homework_instructions.md, which is enclosed in the repository. 
+The requirements for this assignment may be found in the file homework_instructions.md, which is enclosed in the repository under documentation/homework-13-Express. 
 
 ## Technologies Used
 * Git/GitHub
@@ -64,8 +64,8 @@ A running app at https://friend-finder.herokuapp.com/  provided a head-start on 
   }
 ]
 ```
-Gathered photographs for various celebrities from the web and entered those images into the JSON document array, changing information about names and ages in the process.
-* Set up a mlab-hosted MongoDB database with the information for the 40 potential friends.
+Gathered URLs for images of various celebrities from the web and entered those images into the JSON document array, changing information about names and ages in the process. The survey responses, of course, were those from the JSON generator. 
+* We could have set up a mlab-hosted MongoDB database with the information for the 40 potential friends. Or we could have used MySQL. But the assignment did not call for data persistence or an outside database server.
 * 
 * 
 * Executed initial testing under node.js
